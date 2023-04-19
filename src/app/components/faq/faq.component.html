@@ -1,0 +1,22 @@
+<div class="faqs-wrapper">
+  <h2 class="title">Frequently Asked Questions</h2>
+  <div class="faqs">
+    <div
+      class="faq-wrap"
+      *ngFor="let questions of questionsPerBloc; let i = index"
+    >
+      <div class="faq" *ngFor="let question of questions; let j = index">
+        <div class="faq-header" (click)="toggleClick(i, j)">
+          <div class="bars">
+            <span class="bar bar1"></span>
+            <span class="bar bar2" [class.opened]="isClicked[i][j]"></span>
+          </div>
+          <div class="question">{{ question.question }}</div>
+        </div>
+        <div class="answer" [class.show]="isClicked[i][j]">
+          {{ question.answer }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

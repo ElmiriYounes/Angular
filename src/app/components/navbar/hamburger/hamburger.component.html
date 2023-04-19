@@ -1,0 +1,14 @@
+<div class="btn" (click)="toggleHamburger()">
+  <div
+    class="icon-bar"
+    [@hamburgerX]="!isHamburger ? 'hamburger' : 'topX'"
+  ></div>
+  <div
+    class="icon-bar"
+    [@hamburgerX]="!isHamburger ? 'hamburger' : 'hide'"
+  ></div>
+  <div
+    class="icon-bar"
+    [@hamburgerX]="!isHamburger ? 'hamburger' : 'bottomX'"
+  ></div>
+</div>

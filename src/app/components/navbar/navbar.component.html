@@ -1,0 +1,17 @@
+<div class="navbar">
+  <div class="nav-wrapper">
+    <div class="logo-wrapper">LAUNDRY</div>
+    <ul class="nav-items" [@dropdownMobile]="clicked ? 'show' : 'hide'">
+      <li class="nav-item" *ngFor="let item of items">
+        <a (click)="toggle()" class="link" href="{{ item.path }}">
+          {{ item.title }}</a
+        >
+      </li>
+    </ul>
+    <app-hamburger
+      id="hamburger"
+      [isHamburger]="clicked"
+      (hamburgerEvent)="toggle()"
+    ></app-hamburger>
+  </div>
+</div>

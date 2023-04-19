@@ -1,0 +1,46 @@
+@import '../../../styles.scss';
+
+.comments{
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.comment{
+    margin-top: 50px;
+}
+
+.comment:first-of-type{
+    margin-top: unset;
+}
+
+.user{
+    display: flex;
+    color: #464545;
+    font-weight: bold;
+}
+
+.date{
+    font-size: 15px;
+    color: #5C5C60;
+}
+
+.grades{
+    margin-left: 10px;
+    color: rgb(180, 180, 45);
+}
+
+.content{
+    padding-top: 20px;
+    color: #5C5C60;
+}
+
+@media screen and (max-width: 320px) {
+    .user{
+        flex-direction: column;
+    }
+
+    .grades{
+        margin-left: unset;
+    }
+}

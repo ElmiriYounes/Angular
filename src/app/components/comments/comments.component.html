@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="title">Our clients's comments</h2>
+  <div class="comments">
+    <div class="comment" *ngFor="let comment of comments">
+      <div class="user">
+        <span>{{ comment.user }}</span>
+        <div class="grades">
+          <mat-icon>grade</mat-icon>
+          <mat-icon>grade</mat-icon>
+          <mat-icon>grade</mat-icon>
+          <mat-icon>grade</mat-icon>
+          <mat-icon>grade</mat-icon>
+        </div>
+      </div>
+      <div class="date">{{ comment.date }}</div>
+      <p class="content">{{ comment.content }}</p>
+    </div>
+  </div>
+</div>

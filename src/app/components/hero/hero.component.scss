@@ -1,0 +1,106 @@
+.hero-wrapper{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    height: 650px;
+}
+
+.hero-wrapper .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bg-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-wrapper img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.bg-wrapper .bg-color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #9db7da60;
+}
+
+.jumbotron-wrapper{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.jumbotron{
+    max-width: 500px;
+    width: 100%;
+    color:white;
+}
+
+.jumbotron #title-h1{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.jumbotron p{
+    padding: 10px 0;
+}
+
+.jumbotron button{
+    padding: 10px 26px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+
+.jumbotron button::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    transition: all .3s ease-out;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.jumbotron button:hover{
+    color: black;
+}
+
+.jumbotron button:hover::before{
+    width: 100%;
+}
+
+@media screen and (max-width: 598px) {
+    .hero-wrapper{
+        height: auto;
+    }
+}

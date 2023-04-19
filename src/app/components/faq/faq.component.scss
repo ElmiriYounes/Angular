@@ -1,0 +1,74 @@
+@import '../../../styles.scss';
+
+.faqs-wrapper{
+    background-color: #9DB7DA;
+    color:white;
+    padding: 100px 0;
+}
+
+.faqs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.faq-wrap{
+    margin: 0 20px;
+}
+
+.faq{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.faq-header{
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.bars{
+    background-color: lightblue;
+    position: relative;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.bars .bar{
+    width: 15px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+    transform-origin: center;
+    position: absolute;
+    transition: all .3s 0s ease-out;
+}
+
+.bars .bar2{
+    transform: rotate(90deg);
+ }
+
+.opened{
+    transform: rotate(0) !important;
+}
+
+.title{
+    color:white;
+}
+
+.answer{
+    padding-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s 0s ease-out;
+}
+
+.show{
+    max-height: 500px;
+}

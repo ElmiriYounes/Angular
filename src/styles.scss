@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  letter-spacing: 1px;
+  font-size: 18px;
+  // disable blue select on click on mobile on touch
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+p{
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  color: #464545;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

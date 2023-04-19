@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="services">
+    <div class="service" *ngFor="let service of services">
+      <div class="icon">
+        <img [src]="service.icon" alt="service icon" />
+      </div>
+      <div class="content">
+        <div class="title">{{ service.title }}</div>
+        <p class="desc">{{ service.desc }}</p>
+      </div>
+    </div>
+  </div>
+</div>
