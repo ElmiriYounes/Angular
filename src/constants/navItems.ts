@@ -3,26 +3,26 @@ import { NavI } from 'src/interfaces/nav.interface';
 export const navItems: NavI[] = [
   {
     title: 'home',
-    path: '#toTop',
+    path: 'toTop',
   },
   {
     title: 'services',
-    path: '#toServices',
+    path: 'toServices',
   },
   {
     title: 'Benefits',
-    path: '#toBenefits',
+    path: 'toBenefits',
   },
   {
     title: 'comments',
-    path: '#toComments',
+    path: 'toComments',
   },
   {
     title: 'faq',
-    path: '#toFaq',
+    path: 'toFaq',
   },
   {
     title: 'contact',
-    path: '#toContact',
+    path: 'toContact',
   },
 ];

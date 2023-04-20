@@ -1,27 +1,35 @@
-# Laundry
+# Project front end Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+![demo gif](./src/assets/images/gif/demo.gif "demo gif")
 
-## Development server
+## [ ----> [View demo](https://elmiriyounes.github.io/Angular/) <---- ]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## About-the-project 🚀
 
-## Code scaffolding
+This is a website using Angular to show a demonstration of my skills.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 🛠 Built with
 
-## Build
+* ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+* ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ⚡️ Clone the repo
 
-## Running unit tests
+* Clone the repository:
+    ```gitbash
+    git clone git@github.com:ElmiriYounes/Angular.git
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Install the packages (from the root folder):
+    ```gitbash
+    npm install
+    ```
 
-## Running end-to-end tests
+* Get started (from the root folder):
+    ```gitbash
+    ng serve -o
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 💬 Contact
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+El miri younes - elmiri.younes@hotmail.com

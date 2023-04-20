@@ -1,4 +1,10 @@
-import { Component, HostListener } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  ElementRef,
+  ViewChild,
+  Input,
+} from '@angular/core';
 import { navItems } from 'src/constants/navItems';
 import { NavI } from 'src/interfaces/nav.interface';
 import {
@@ -8,6 +14,7 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -31,8 +38,22 @@ export class NavbarComponent {
   clicked: boolean = false;
   isMobile: boolean = window.innerWidth <= 1080;
 
+  constructor(
+    private elementRef: ElementRef,
+    private viewportScroller: ViewportScroller
+  ) {}
+
   toggle(): void {
     this.isMobile && (this.clicked = !this.clicked);
+  }
+
+  scrollTo(scrollToId: string) {
+    const topOfElement: number =
+      this.elementRef.nativeElement.parentNode.querySelector(
+        `#${scrollToId}`
+      ).offsetTop;
+
+    this.viewportScroller.scrollToPosition([0, topOfElement]);
   }
 
   @HostListener('window:resize', ['$event'])
