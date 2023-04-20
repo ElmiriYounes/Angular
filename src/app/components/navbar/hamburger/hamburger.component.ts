@@ -55,5 +55,6 @@ export class HamburgerComponent {
 
   toggleHamburger(): void {
     this.hamburgerEvent.emit(this.isHamburger);
+    console.log(`${document.location.origin}/assets/images/machines.jpg`);
   }
 }
